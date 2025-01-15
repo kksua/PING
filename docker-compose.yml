@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  headset-microphone:
+    build:
+      context: ./Cnam-LMSSCphonemizer-headset-microphone
+      dockerfile: Dockerfile
+    image: phonetic-tool:headset-microphone
+    container_name: phonetic-tool-headset
+    ports:
+      - "8501:8501"
+
+  wav2vec2-phonemizer:
+    build:
+      context: ./Cnam-LMSSCwav2vec2-french-phonemizer
+      dockerfile: Dockerfile
+    image: phonetic-tool:wav2vec2-phonemizer
+    container_name: phonetic-tool-wav2vec2
+    ports:
+      - "8502:8502"

@@ -1,0 +1,8 @@
+streamlit
+numpy
+phonemizer
+torch
+torchaudio
+transformers
+python-Levenshtein
+Pillow
