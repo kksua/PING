@@ -1,8 +1,7 @@
-Flask==2.2.2
-Werkzeug==2.2.2
-torch==2.5.1
-torchaudio==2.5.1
-transformers==4.48.0
-phonemizer==3.3.0
-Levenshtein==0.26.1
-wavefile
+torch
+transformers
+phonemizer
+Levenshtein
+numpy
+pyaudio
+torchaudio
