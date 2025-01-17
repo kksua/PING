@@ -1,0 +1,137 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #282828;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    color: #ffa500;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+/* Highlighted word */
+.highlighted {
+    color: #1e90ff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Button styles */
+.btn, .audio-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover, .audio-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.audio-btn:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+
+/* Audio controls container */
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
+    background-color: #383838;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Status message */
+.status-message {
+    color: #ffa500;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Results styling */
+.result-section {
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 1.1rem;
+    color: #f7fcd9;
+}
+
+/* Phoneme scores styles */
+.phoneme-scores {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.phoneme-scores span {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Score colors */
+.green {
+    background-color: #ccffcc;
+    color: #008000;
+}
+
+.orange {
+    background-color: #ffe5cc;
+    color: #ff8000;
+}
+
+.red {
+    background-color: #ffcccc;
+    color: #ff0000;
+}
+#waveform {
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+

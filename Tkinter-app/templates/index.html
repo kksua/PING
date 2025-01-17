@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonetic Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script></head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Outil de Transcription Phonétique</h1>
+        </header>
+
+        <main>
+            <div class="word-section">
+                <p class="section-title">Mot ou phrase correcte :</p>
+                <button id="nextBtn" class="btn">Mot/Expression suivant(e)</button>
+                <p id="currentWord" class="highlighted">{{ word }}</p>
+            </div>
+
+            <div class="audio-section">
+                <p class="section-title">Enregistrez un message vocal :</p>
+                <div class="audio-controls">
+                    <button id="startRecording" class="audio-btn">
+                        <i class="fas fa-microphone"></i></button>
+                    <button id="stopRecording" class="audio-btn" disabled>                        
+                        <i class="fas fa-stop-circle"></i>
+                    </button>
+                </div>
+                <p id="status" class="status-message"></p>
+                <div id="waveform"></div>
+                <div class="audio-controls">
+                    <button id="playAudio" class="audio-btn" disabled>
+                        <i class="fas fa-play-circle"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="result-section">
+                <h2>Résultats</h2>
+                <p><strong>Transcription correcte :</strong> <span id="referenceText" class="result-text"></span></p>
+                <p><strong>Transcription de l'audio :</strong> <span id="transcriptionText" class="result-text"></span></p>
+                <div id="phonemeScores" class="phoneme-scores"></div>
+                <p><strong>Score total :</strong> <span id="totalScore" class="result-text"></span></p>
+            </div>
+        </main>
+
+        <script src="/static/script.js"></script>
+    </div>
+</body>
+</html>
